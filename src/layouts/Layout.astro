@@ -1,0 +1,213 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = "Instalaciones eléctricas en Granada. 23 años de experiencia. Presupuesto claro, trabajo garantizado." } = Astro.props;
+---
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content={description}>
+<title>{title}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-bar"></div>
+    <div class="nav-logotype">
+      Leyva
+      <small>Instalaciones</small>
+    </div>
+  </a>
+  <button class="nav-toggle" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="/#nosotros">Nosotros</a></li>
+    <li><a href="/#servicios">Servicios</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li class="cta-link"><a href="/#contacto">Presupuesto</a></li>
+  </ul>
+</nav>
+
+<slot />
+
+<footer>
+  <a href="/" class="footer-logo">
+    <div class="nav-bar"></div>
+    <div class="footer-logotype">
+      Leyva
+      <small>Instalaciones</small>
+    </div>
+  </a>
+  <ul class="footer-links">
+    <li><a href="/#nosotros">Nosotros</a></li>
+    <li><a href="/#servicios">Servicios</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/#contacto">Contacto</a></li>
+  </ul>
+  <span class="footer-copy">&copy; 2025 Leyva Instalaciones</span>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle?.addEventListener('click', () => {
+    links?.classList.toggle('open');
+    toggle.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
+
+<style is:global>
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  :root {
+    --g:   #1E3A2F;
+    --gd:  #142E24;
+    --gm:  #2A5240;
+    --m:   #7EC8A4;
+    --c:   #F4F0E8;
+    --ln:  #E8E3D8;
+    --w:   #FFFFFF;
+    --ink: #111111;
+    --mid: #888;
+  }
+
+  html { scroll-behavior:smooth; }
+  body {
+    background: var(--w);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top:0; left:0; right:0; z-index:99;
+    display: flex; align-items: stretch;
+    height: 60px;
+    background: var(--w);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .nav-logo {
+    display: flex; align-items: center;
+    padding: 0 28px;
+    border-right: 1.5px solid var(--ink);
+    gap: 10px; text-decoration: none;
+    flex-shrink: 0;
+  }
+  .nav-bar { width: 3px; height: 32px; background: var(--m); border-radius: 1px; }
+  .nav-logotype {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: 20px;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    color: var(--ink); line-height: 1;
+  }
+  .nav-logotype small {
+    display: block; font-family: 'DM Mono', monospace;
+    font-weight: 500; font-size: 7.5px;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--mid); margin-top: 4px;
+  }
+  .nav-toggle {
+    display: none;
+    flex-direction: column; justify-content: center; gap: 5px;
+    background: none; border: none; cursor: pointer;
+    padding: 0 20px; margin-left: auto;
+  }
+  .nav-toggle span {
+    display: block; width: 22px; height: 2px;
+    background: var(--ink); transition: transform .2s, opacity .2s;
+  }
+  .nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle.active span:nth-child(2) { opacity: 0; }
+  .nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .nav-links {
+    display: flex; align-items: stretch; list-style: none;
+    margin-left: auto;
+  }
+  .nav-links li { display: flex; }
+  .nav-links a {
+    display: flex; align-items: center; padding: 0 22px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700; font-size: 11px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--mid); text-decoration: none;
+    border-left: 1.5px solid var(--ln);
+    transition: color .15s, background .15s;
+  }
+  .nav-links a:hover { color: var(--ink); background: var(--ln); }
+  .nav-links .cta-link a {
+    background: var(--g); color: var(--c);
+    border-left-color: var(--g);
+  }
+  .nav-links .cta-link a:hover { background: var(--gm); }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    display: grid; grid-template-columns: auto 1fr auto;
+    align-items: center; gap: 0;
+    border-top: 1.5px solid var(--ink);
+  }
+  .footer-logo {
+    padding: 20px 32px; border-right: 1px solid rgba(255,255,255,0.08);
+    display: flex; align-items: center; gap: 10px; text-decoration: none;
+  }
+  .footer-logotype {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800; font-size: 16px; text-transform: uppercase;
+    color: var(--c); letter-spacing: 0.01em; line-height: 1;
+  }
+  .footer-logotype small { display: block; font-size: 7px; letter-spacing: 0.2em; color: rgba(244,240,232,0.3); margin-top: 3px; }
+  .footer-links {
+    display: flex; align-items: center; justify-content: center;
+    gap: 28px; list-style: none;
+    padding: 0 32px;
+  }
+  .footer-links a {
+    font-family: 'DM Mono', monospace; font-size: 9px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(255,255,255,0.28); text-decoration: none; transition: color .2s;
+  }
+  .footer-links a:hover { color: var(--m); }
+  .footer-copy {
+    padding: 20px 32px; border-left: 1px solid rgba(255,255,255,0.08);
+    font-family: 'DM Mono', monospace; font-size: 9px;
+    letter-spacing: 0.08em; color: rgba(255,255,255,0.2);
+  }
+
+  /* SHARED UTILITY STYLES */
+  .section-kicker {
+    font-family: 'DM Mono', monospace; font-size: 9px;
+    font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--mid); display: block; margin-bottom: 16px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 800px) {
+    .nav-toggle { display: flex; }
+    .nav-links {
+      display: none;
+      position: absolute; top: 60px; left: 0; right: 0;
+      flex-direction: column; background: var(--w);
+      border-bottom: 1.5px solid var(--ink);
+    }
+    .nav-links.open { display: flex; }
+    .nav-links li { border-bottom: 1px solid var(--ln); }
+    .nav-links a { padding: 16px 28px; border-left: none; width: 100%; }
+    .nav-links .cta-link a { width: 100%; }
+    footer { grid-template-columns: 1fr; }
+    .footer-links { display: none; }
+  }
+</style>

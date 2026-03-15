@@ -1,0 +1,508 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const servicios = [
+  { slug: 'obra-nueva', title: 'Instalación en Obra Nueva', tag: 'Construcción' },
+  { slug: 'domotica', title: 'Domótica e Instalación Inteligente', tag: 'Tecnología' },
+  { slug: 'averias', title: 'Averías y Emergencias', tag: 'Urgente' },
+  { slug: 'industrial', title: 'Industrial Ligero', tag: 'Empresas' },
+  { slug: 'comunidades', title: 'Comunidades y Negocios Locales', tag: 'Comunidades' },
+];
+---
+
+<Layout title="Reforma de Vivienda o Local — Leyva Instalaciones" description="Renovación completa o parcial de instalaciones eléctricas en Granada. Actualización normativa REBT, ampliación de potencia y coordinación con otros gremios.">
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Inicio</a>
+  <span class="sep">/</span>
+  <a href="/#servicios">Servicios</a>
+  <span class="sep">/</span>
+  <span class="current">Reforma de Vivienda o Local</span>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <span class="hero-kicker">Entrada principal</span>
+  <h1 class="hero-title">Reforma de Vivienda<br>o <span class="accent">Local</span></h1>
+  <p class="hero-desc">Renovación completa o parcial de la instalación eléctrica existente. Actualización normativa, ampliaciones de potencia y coordinación con otros gremios incluida.</p>
+  <div class="hero-badges">
+    <span class="badge">REBT</span>
+    <span class="badge">Ampliación de potencia</span>
+    <span class="badge">Coordinación de gremios</span>
+  </div>
+</section>
+
+<!-- DESCRIPCIÓN -->
+<section class="detail">
+  <div class="detail-inner">
+    <span class="section-kicker">Sobre este servicio</span>
+    <div class="detail-text">
+      <p>Reformar una vivienda o un local comercial implica mucho más que cambiar cables. Significa garantizar que toda la instalación eléctrica cumple con el Reglamento Electrotécnico de Baja Tensión (REBT) vigente, que la potencia contratada es la adecuada para el uso actual, y que cada circuito está dimensionado para soportar la carga real del espacio.</p>
+      <p>En Leyva Instalaciones llevamos más de 23 años ejecutando reformas eléctricas en toda la provincia de Granada. Desde pisos antiguos en el centro hasta locales comerciales que necesitan una puesta a punto completa. Nos encargamos de todo: desde el diseño del nuevo cuadro eléctrico hasta la coordinación con albañiles, fontaneros y pintores para que los tiempos encajen.</p>
+      <p>No subcontratamos. El que presupuesta es el que ejecuta. Eso significa que cuando surge un imprevisto — y en reformas siempre surge algo — tienes un interlocutor directo que toma decisiones y te informa antes de actuar. Sin sorpresas en la factura.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ INCLUYE -->
+<section class="included">
+  <div class="included-inner">
+    <div class="included-left">
+      <span class="section-kicker">Qué incluye</span>
+      <h2 class="included-title">Todo lo que cubre este servicio</h2>
+    </div>
+    <ul class="included-list">
+      <li><span class="li-marker"></span>Evaluación completa de la instalación existente</li>
+      <li><span class="li-marker"></span>Diseño del nuevo cuadro eléctrico según REBT</li>
+      <li><span class="li-marker"></span>Ampliación o reducción de potencia contratada</li>
+      <li><span class="li-marker"></span>Nuevos circuitos para cocina, aire acondicionado, carga de vehículo eléctrico</li>
+      <li><span class="li-marker"></span>Sustitución de cableado antiguo (aluminio a cobre)</li>
+      <li><span class="li-marker"></span>Instalación de mecanismos (enchufes, interruptores, puntos de luz)</li>
+      <li><span class="li-marker"></span>Coordinación con fontaneros, albañiles y otros gremios</li>
+      <li><span class="li-marker"></span>Boletín eléctrico y legalización de la instalación</li>
+      <li><span class="li-marker"></span>Gestión de trámites con la distribuidora eléctrica</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="process">
+  <span class="section-kicker">Cómo trabajamos</span>
+  <h2 class="process-title">El proceso paso a paso</h2>
+  <div class="process-steps">
+    <div class="pstep">
+      <span class="pstep-n">01</span>
+      <h3 class="pstep-title">Visita y diagnóstico</h3>
+      <p>Visitamos el espacio para evaluar el estado de la instalación actual. Identificamos qué se puede aprovechar y qué hay que renovar. Sin coste ni compromiso.</p>
+    </div>
+    <div class="pstep">
+      <span class="pstep-n">02</span>
+      <h3 class="pstep-title">Presupuesto detallado</h3>
+      <p>Te entregamos un presupuesto claro con partidas desglosadas. Sin letra pequeña. Si hay algo que puede variar, te lo decimos antes — no después.</p>
+    </div>
+    <div class="pstep">
+      <span class="pstep-n">03</span>
+      <h3 class="pstep-title">Ejecución coordinada</h3>
+      <p>Nos adaptamos al calendario de la obra. Coordinamos con el resto de gremios para que las fases de la reforma avancen sin bloqueos. Plazos realistas que cumplimos.</p>
+    </div>
+    <div class="pstep">
+      <span class="pstep-n">04</span>
+      <h3 class="pstep-title">Legalización y entrega</h3>
+      <p>Emitimos el boletín eléctrico, gestionamos la legalización ante industria y te entregamos la instalación lista para funcionar. Garantía incluida.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <span class="section-kicker">Preguntas frecuentes</span>
+  <h2 class="faq-title">Lo que más nos preguntan</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3 class="faq-q">¿Necesito actualizar toda la instalación o puedo hacer solo una parte?</h3>
+      <p class="faq-a">Depende del estado actual. En muchos casos se puede hacer una reforma parcial — por ejemplo, renovar solo la cocina o añadir circuitos nuevos — sin tocar el resto. Pero si el cableado es de aluminio o el cuadro no cumple normativa, te recomendaremos una actualización más amplia por seguridad. Siempre te explicamos el porqué.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-q">¿Cuánto tiempo dura una reforma eléctrica completa?</h3>
+      <p class="faq-a">Para una vivienda estándar (80-120 m²), la parte eléctrica suele ocupar entre 3 y 5 días laborables de trabajo neto. Pero en una reforma integral hay que coordinarse con otros gremios, así que el plazo total depende del conjunto. Te damos un calendario realista al inicio.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-q">¿El boletín eléctrico está incluido en el precio?</h3>
+      <p class="faq-a">Sí. Todas nuestras reformas incluyen el boletín eléctrico (Certificado de Instalación Eléctrica) y la gestión de legalización ante la Junta de Andalucía. Es parte del trabajo, no un extra.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2 class="cta-title">¿Tienes una reforma en marcha?</h2>
+    <p class="cta-desc">Cuéntanos qué necesitas. Te damos una valoración honesta sin compromiso y sin letra pequeña.</p>
+    <a href="/#contacto" class="cta-btn">Solicitar presupuesto</a>
+  </div>
+</section>
+
+<!-- OTROS SERVICIOS -->
+<section class="otros">
+  <div class="otros-header">
+    <h2 class="otros-title">Otros servicios</h2>
+  </div>
+  <div class="otros-grid">
+    {servicios.map(s => (
+      <a href={`/servicios/${s.slug}`} class="otro-card">
+        <span class="otro-tag">{s.tag}</span>
+        <span class="otro-name">{s.title}</span>
+        <span class="otro-arrow">&rarr;</span>
+      </a>
+    ))}
+  </div>
+</section>
+
+</Layout>
+
+<style>
+  /* BREADCRUMB */
+  .breadcrumb {
+    margin-top: 60px;
+    padding: 14px 40px;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    border-bottom: 1.5px solid var(--ln);
+    background: var(--w);
+  }
+  .breadcrumb a {
+    color: var(--mid);
+    text-decoration: none;
+    transition: color .15s;
+  }
+  .breadcrumb a:hover { color: var(--ink); }
+  .breadcrumb .sep { margin: 0 8px; color: var(--ln); }
+  .breadcrumb .current { color: var(--ink); }
+
+  /* PAGE HERO */
+  .page-hero {
+    background: var(--g);
+    padding: clamp(48px, 7vw, 96px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .hero-kicker {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--m);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .hero-kicker::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: var(--m);
+  }
+  .hero-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 5.5vw, 72px);
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+    color: var(--c);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    max-width: 700px;
+  }
+  .hero-title .accent { color: var(--m); }
+  .hero-desc {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(244,240,232,0.6);
+    max-width: 520px;
+    font-weight: 300;
+    margin-bottom: 28px;
+  }
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--m);
+    border: 1px solid rgba(126,200,164,0.3);
+    padding: 5px 12px;
+  }
+
+  /* DETAIL */
+  .detail {
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ln);
+  }
+  .detail-inner { max-width: 680px; }
+  .detail-text p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .detail-text p:last-child { margin-bottom: 0; }
+  .detail-text strong { font-weight: 600; color: var(--ink); }
+
+  /* INCLUDED */
+  .included {
+    background: var(--c);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .included-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .included-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    color: var(--ink);
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+  .included-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .included-list li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--ln);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .included-list li:first-child { padding-top: 0; }
+  .li-marker {
+    width: 6px;
+    height: 6px;
+    background: var(--m);
+    border-radius: 1px;
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+
+  /* PROCESS */
+  .process {
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .process-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 40px;
+  }
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+  .pstep {
+    background: var(--c);
+    padding: 28px 24px;
+    border: 1.5px solid var(--ln);
+    position: relative;
+  }
+  .pstep::before {
+    content: '';
+    position: absolute;
+    top: -1.5px; left: -1.5px; right: -1.5px;
+    height: 3px;
+    background: transparent;
+    transition: background .2s;
+  }
+  .pstep:hover::before { background: var(--m); }
+  .pstep-n {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.05em;
+    color: var(--g);
+    line-height: 1;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .pstep-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .pstep p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.65;
+  }
+
+  /* FAQ */
+  .faq {
+    background: var(--c);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .faq-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 36px;
+  }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 720px;
+  }
+  .faq-item {
+    padding: 24px 0;
+    border-bottom: 1.5px solid var(--ln);
+  }
+  .faq-item:first-child { padding-top: 0; }
+  .faq-q {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .faq-a {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #666;
+  }
+
+  /* CTA SECTION */
+  .cta-section {
+    background: var(--g);
+    padding: clamp(56px, 7vw, 96px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+    text-align: center;
+  }
+  .cta-inner { max-width: 520px; margin: 0 auto; }
+  .cta-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 4vw, 44px);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--c);
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+  .cta-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(244,240,232,0.55);
+    margin-bottom: 28px;
+    font-weight: 300;
+  }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--g);
+    background: var(--m);
+    padding: 14px 32px;
+    transition: opacity .2s;
+  }
+  .cta-btn:hover { opacity: .88; }
+  .cta-btn::after { content: '\2192'; font-size: 16px; }
+
+  /* OTROS SERVICIOS */
+  .otros {
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .otros-header {
+    padding: 20px 40px;
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .otros-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .otros-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .otro-card {
+    padding: 24px 20px;
+    border-right: 1.5px solid var(--ln);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: background .15s;
+    position: relative;
+  }
+  .otro-card:last-child { border-right: none; }
+  .otro-card:hover { background: var(--c); }
+  .otro-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--m);
+  }
+  .otro-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  .otro-arrow {
+    font-size: 16px;
+    color: var(--m);
+    margin-top: auto;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity .2s, transform .2s;
+  }
+  .otro-card:hover .otro-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 800px) {
+    .breadcrumb { padding: 12px 20px; }
+    .page-hero { padding: 40px 24px; }
+    .hero-title { font-size: 36px; }
+    .included-inner { grid-template-columns: 1fr; gap: 24px; }
+    .process-steps { grid-template-columns: 1fr 1fr; }
+    .otros-grid { grid-template-columns: 1fr 1fr; }
+    .otro-card:nth-child(even) { border-right: none; }
+    .otro-card { border-bottom: 1.5px solid var(--ln); }
+  }
+  @media (max-width: 480px) {
+    .process-steps { grid-template-columns: 1fr; }
+    .otros-grid { grid-template-columns: 1fr; }
+    .otro-card { border-right: none; }
+  }
+</style>

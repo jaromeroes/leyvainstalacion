@@ -1,0 +1,363 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const articles = [
+  {
+    slug: 'revisar-instalacion-antes-reforma',
+    topic: 'Reforma',
+    title: 'Qué revisar en tu instalación eléctrica antes de empezar una reforma',
+    excerpt: 'Antes de tirar paredes hay preguntas que vale la pena hacerle a tu instalación. Estas son las más importantes — y por qué importan.',
+    date: '12 Feb 2025',
+    reading: '4 min lectura',
+    featured: true,
+  },
+  {
+    slug: 'preparar-casa-domotica',
+    topic: 'Domótica',
+    title: '¿Merece la pena preparar tu casa nueva para domótica?',
+    excerpt: 'El coste de pre-instalar domótica durante la obra es una fracción de hacerlo después. Pero no todo el mundo la necesita.',
+    date: '28 Ene 2025',
+    reading: '3 min lectura',
+  },
+  {
+    slug: 'cambiar-cuadro-electrico',
+    topic: 'Seguridad',
+    title: 'Cuándo tienes que cambiar el cuadro eléctrico y cuándo no',
+    excerpt: 'Un cuadro antiguo no siempre significa un cuadro peligroso. Te explicamos cuándo hay que actuar y cuándo puedes esperar.',
+    date: '15 Ene 2025',
+    reading: '5 min lectura',
+  },
+  {
+    slug: 'boletin-electrico',
+    topic: 'Normativa',
+    title: 'El boletín eléctrico: qué es, para qué sirve y cuándo lo necesitas',
+    excerpt: 'Si vas a vender, alquilar o ampliar potencia, necesitas este documento. Te contamos todo lo que debes saber.',
+    date: '02 Ene 2025',
+    reading: '4 min lectura',
+  },
+];
+
+const featured = articles[0];
+const rest = articles.slice(1);
+---
+
+<Layout title="Blog — Leyva Instalaciones" description="Artículos y consejos sobre instalaciones eléctricas, reformas, domótica y normativa. Por Leyva Instalaciones, Granada.">
+
+<main class="blog-page">
+  <section class="blog-hero">
+    <span class="section-kicker">Blog</span>
+    <h1>Artículos y consejos</h1>
+    <p class="blog-hero-sub">Lo que hemos aprendido en más de 20 años resolviendo instalaciones eléctricas en Granada. Sin tecnicismos innecesarios, con la información que de verdad necesitas.</p>
+  </section>
+
+  <section class="featured-section">
+    <a href={`/blog/${featured.slug}`} class="featured-card">
+      <div class="featured-img">
+        <span class="featured-img-label">Artículo destacado</span>
+      </div>
+      <div class="featured-body">
+        <span class="topic-tag">{featured.topic}</span>
+        <h2 class="featured-title">{featured.title}</h2>
+        <p class="featured-excerpt">{featured.excerpt}</p>
+        <div class="featured-meta">{featured.date} · {featured.reading}</div>
+      </div>
+    </a>
+  </section>
+
+  <section class="articles-section">
+    <div class="articles-header">
+      <span class="section-kicker">Más artículos</span>
+    </div>
+    <div class="articles-grid">
+      {rest.map((article) => (
+        <a href={`/blog/${article.slug}`} class="article-card">
+          <div class="article-card-top">
+            <span class="topic-tag">{article.topic}</span>
+            <span class="article-meta">{article.date}</span>
+          </div>
+          <h3 class="article-title">{article.title}</h3>
+          <p class="article-excerpt">{article.excerpt}</p>
+          <div class="article-footer">
+            <span class="article-reading">{article.reading}</span>
+            <span class="article-arrow">&rarr;</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="blog-cta">
+    <div class="blog-cta-inner">
+      <h2>¿Necesitas ayuda con tu instalación?</h2>
+      <p>Presupuesto claro, sin compromiso. Respondemos en menos de 24 horas.</p>
+      <a href="/#contacto" class="blog-cta-btn">Solicitar presupuesto</a>
+    </div>
+  </section>
+</main>
+
+</Layout>
+
+<style>
+  .blog-page {
+    margin-top: 60px;
+  }
+
+  /* HERO */
+  .blog-hero {
+    background: var(--g);
+    padding: clamp(48px, 8vw, 96px) clamp(32px, 6vw, 80px) clamp(40px, 6vw, 72px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .blog-hero .section-kicker {
+    color: var(--m);
+    margin-bottom: 20px;
+  }
+  .blog-hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 6vw, 72px);
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--c);
+    line-height: 0.95;
+    margin-bottom: 20px;
+  }
+  .blog-hero-sub {
+    font-size: 15px;
+    line-height: 1.75;
+    color: rgba(244, 240, 232, 0.5);
+    max-width: 520px;
+    font-weight: 300;
+  }
+
+  /* FEATURED */
+  .featured-section {
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .featured-card {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s;
+  }
+  .featured-card:hover {
+    background: var(--c);
+  }
+  .featured-img {
+    aspect-ratio: 16 / 10;
+    background: var(--ln);
+    border-right: 1.5px solid var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .featured-img-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #bbb;
+  }
+  .featured-body {
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+  .topic-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--m);
+    background: var(--g);
+    padding: 4px 10px;
+    display: inline-block;
+    align-self: flex-start;
+  }
+  .featured-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 3vw, 32px);
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .featured-excerpt {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  .featured-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    color: var(--mid);
+    padding-top: 12px;
+    border-top: 1px solid var(--ln);
+    margin-top: 4px;
+  }
+
+  /* ARTICLES GRID */
+  .articles-section {
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .articles-header {
+    padding: 20px 40px;
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .articles-header .section-kicker {
+    margin-bottom: 0;
+  }
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .article-card {
+    padding: 32px 36px;
+    border-right: 1.5px solid var(--ln);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: background 0.15s;
+    position: relative;
+  }
+  .article-card:last-child {
+    border-right: none;
+  }
+  .article-card:hover {
+    background: var(--c);
+  }
+  .article-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .article-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+  .article-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+  .article-excerpt {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.65;
+    flex: 1;
+  }
+  .article-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid var(--ln);
+    margin-top: 4px;
+  }
+  .article-reading {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+  .article-arrow {
+    font-size: 16px;
+    color: var(--m);
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .article-card:hover .article-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* CTA */
+  .blog-cta {
+    background: var(--c);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+  }
+  .blog-cta-inner {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .blog-cta h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--ink);
+    line-height: 1.05;
+  }
+  .blog-cta p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+  }
+  .blog-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--c);
+    background: var(--g);
+    padding: 14px 28px;
+    transition: background 0.2s;
+  }
+  .blog-cta-btn:hover {
+    background: var(--gm);
+  }
+  .blog-cta-btn::after {
+    content: '\2192';
+    font-size: 16px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 800px) {
+    .featured-card {
+      grid-template-columns: 1fr;
+    }
+    .featured-img {
+      border-right: none;
+      border-bottom: 1.5px solid var(--ink);
+    }
+    .articles-grid {
+      grid-template-columns: 1fr;
+    }
+    .article-card {
+      border-right: none;
+      border-bottom: 1.5px solid var(--ln);
+    }
+    .article-card:last-child {
+      border-bottom: none;
+    }
+  }
+</style>
