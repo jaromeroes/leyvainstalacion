@@ -1,0 +1,360 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const servicios = [
+  { slug: 'reforma-vivienda', title: 'Reforma de Vivienda o Local', tag: 'Entrada principal' },
+  { slug: 'obra-nueva', title: 'Instalación en Obra Nueva', tag: 'Construcción' },
+  { slug: 'domotica', title: 'Domótica e Instalación Inteligente', tag: 'Tecnología' },
+  { slug: 'industrial', title: 'Industrial Ligero', tag: 'Empresas' },
+  { slug: 'comunidades', title: 'Comunidades y Negocios Locales', tag: 'Comunidades' },
+];
+---
+
+<Layout title="Averías y Emergencias Eléctricas — Leyva Instalaciones" description="Diagnóstico y resolución rápida de averías eléctricas en Granada. Disponibilidad real, respuesta directa y precios claros.">
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Inicio</a>
+  <span class="sep">/</span>
+  <a href="/#servicios">Servicios</a>
+  <span class="sep">/</span>
+  <span class="current">Averías y Emergencias</span>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <span class="hero-kicker">Urgente</span>
+  <h1 class="hero-title">Averías y<br><span class="accent">Emergencias</span></h1>
+  <p class="hero-desc">Diagnóstico y resolución rápida. Disponibilidad real, no solo una promesa en la web. Cuando llamas, respondemos. Cuando vamos, solucionamos.</p>
+  <div class="hero-badges">
+    <span class="badge">Diagnóstico rápido</span>
+    <span class="badge">Respuesta directa</span>
+    <span class="badge">Sin sorpresas</span>
+  </div>
+</section>
+
+<!-- DESCRIPCIÓN -->
+<section class="detail">
+  <div class="detail-inner">
+    <span class="section-kicker">Sobre este servicio</span>
+    <div class="detail-text">
+      <p>Una avería eléctrica no avisa. Un diferencial que salta sin motivo aparente, un cortocircuito en la cocina, una zona de la casa que se queda sin luz. Lo que necesitas en ese momento es un profesional que coja el teléfono, entienda el problema y se presente con la herramienta adecuada — no alguien que te dé cita para dentro de tres días.</p>
+      <p>En Leyva Instalaciones no hacemos promesas de "24 horas 7 días" que luego no se cumplen. Lo que sí hacemos es responder cuando llamas, darte una valoración honesta por teléfono de lo que puede estar pasando, y desplazarnos lo antes posible dentro de nuestro horario de trabajo. Si la avería es crítica, intentamos ir el mismo día.</p>
+      <p>Nuestro enfoque es resolver el problema real, no poner un parche. Diagnosticamos la causa, te explicamos qué ha pasado y qué opciones tienes, y te damos un precio antes de actuar. Sin facturas infladas ni trabajos innecesarios. Llevamos 23 años trabajando así en Granada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ INCLUYE -->
+<section class="included">
+  <div class="included-inner">
+    <div class="included-left">
+      <span class="section-kicker">Qué incluye</span>
+      <h2 class="included-title">Todo lo que cubre este servicio</h2>
+    </div>
+    <ul class="included-list">
+      <li><span class="li-marker"></span>Atención telefónica directa con el instalador (sin centralita)</li>
+      <li><span class="li-marker"></span>Diagnóstico de la avería con instrumental profesional</li>
+      <li><span class="li-marker"></span>Localización de cortocircuitos y derivaciones a tierra</li>
+      <li><span class="li-marker"></span>Reparación o sustitución de elementos dañados</li>
+      <li><span class="li-marker"></span>Revisión del cuadro eléctrico y protecciones</li>
+      <li><span class="li-marker"></span>Identificación de causas raíz para evitar repetición</li>
+      <li><span class="li-marker"></span>Informe verbal o escrito de lo encontrado y lo reparado</li>
+      <li><span class="li-marker"></span>Recomendaciones de mejora si la instalación lo necesita</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="process">
+  <span class="section-kicker">Cómo trabajamos</span>
+  <h2 class="process-title">El proceso paso a paso</h2>
+  <div class="process-steps">
+    <div class="pstep">
+      <span class="pstep-n">01</span>
+      <h3 class="pstep-title">Nos llamas</h3>
+      <p>Describes lo que pasa: qué ha dejado de funcionar, si salta algún diferencial, si hay olor a quemado. Te orientamos por teléfono y, si es necesario, fijamos una visita lo antes posible.</p>
+    </div>
+    <div class="pstep">
+      <span class="pstep-n">02</span>
+      <h3 class="pstep-title">Diagnóstico in situ</h3>
+      <p>Revisamos la instalación con instrumental adecuado. Identificamos la causa real del problema — no solo el síntoma. Te explicamos qué hemos encontrado con claridad.</p>
+    </div>
+    <div class="pstep">
+      <span class="pstep-n">03</span>
+      <h3 class="pstep-title">Presupuesto antes de actuar</h3>
+      <p>Si la reparación va más allá de un ajuste menor, te damos precio antes de tocar nada. Sin sorpresas. Tú decides si seguimos adelante.</p>
+    </div>
+    <div class="pstep">
+      <span class="pstep-n">04</span>
+      <h3 class="pstep-title">Reparación y verificación</h3>
+      <p>Resolvemos la avería y verificamos que todo funciona correctamente. Si detectamos otros problemas potenciales, te lo comunicamos — sin presión ni venta cruzada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <span class="section-kicker">Preguntas frecuentes</span>
+  <h2 class="faq-title">Lo que más nos preguntan</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3 class="faq-q">¿Tenéis servicio 24 horas?</h3>
+      <p class="faq-a">No ofrecemos servicio 24/7 porque no queremos prometer algo que no podemos cumplir con garantía. Nuestro horario es de lunes a viernes, de 8:00 a 19:00. Dentro de ese horario, la respuesta es rápida y directa. Si la avería es urgente, intentamos ir el mismo día. Para emergencias fuera de horario, te orientamos por teléfono sobre medidas de seguridad inmediatas.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-q">¿Cuánto cuesta una visita por avería?</h3>
+      <p class="faq-a">Cobramos un desplazamiento fijo que incluye la primera hora de diagnóstico. Si la reparación es sencilla (un diferencial mal calibrado, un empalme suelto), suele resolverse en esa misma visita. Si requiere más trabajo, te damos presupuesto antes de continuar. Te lo decimos todo por adelantado, sin costes ocultos.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-q">El diferencial salta constantemente, ¿qué puede ser?</h3>
+      <p class="faq-a">Las causas más comunes son: una derivación a tierra en algún electrodoméstico, humedad en alguna caja de empalmes, o un diferencial defectuoso o mal dimensionado. También puede haber un problema de aislamiento en el cableado antiguo. Lo mejor es no ir rearmando sin más — si salta repetidamente, hay una razón y conviene encontrarla.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2 class="cta-title">¿Tienes una avería eléctrica?</h2>
+    <p class="cta-desc">Llámanos o escríbenos. Te atendemos directamente y buscamos solución lo antes posible.</p>
+    <a href="/#contacto" class="cta-btn">Contactar ahora</a>
+  </div>
+</section>
+
+<!-- OTROS SERVICIOS -->
+<section class="otros">
+  <div class="otros-header">
+    <h2 class="otros-title">Otros servicios</h2>
+  </div>
+  <div class="otros-grid">
+    {servicios.map(s => (
+      <a href={`/servicios/${s.slug}`} class="otro-card">
+        <span class="otro-tag">{s.tag}</span>
+        <span class="otro-name">{s.title}</span>
+        <span class="otro-arrow">&rarr;</span>
+      </a>
+    ))}
+  </div>
+</section>
+
+</Layout>
+
+<style>
+  .breadcrumb {
+    margin-top: 60px;
+    padding: 14px 40px;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    border-bottom: 1.5px solid var(--ln);
+    background: var(--w);
+  }
+  .breadcrumb a { color: var(--mid); text-decoration: none; transition: color .15s; }
+  .breadcrumb a:hover { color: var(--ink); }
+  .breadcrumb .sep { margin: 0 8px; color: var(--ln); }
+  .breadcrumb .current { color: var(--ink); }
+
+  .page-hero {
+    background: var(--gm);
+    padding: clamp(48px, 7vw, 96px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .hero-kicker {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: #F0C76A;
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 24px;
+  }
+  .hero-kicker::before { content: ''; width: 20px; height: 1px; background: #F0C76A; }
+  .hero-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 5.5vw, 72px);
+    letter-spacing: -0.02em; line-height: 0.95;
+    color: var(--c); text-transform: uppercase;
+    margin-bottom: 24px; max-width: 700px;
+  }
+  .hero-title .accent { color: var(--m); }
+  .hero-desc {
+    font-size: 16px; line-height: 1.7;
+    color: rgba(244,240,232,0.6);
+    max-width: 520px; font-weight: 300; margin-bottom: 28px;
+  }
+  .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+  .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--m);
+    border: 1px solid rgba(126,200,164,0.3);
+    padding: 5px 12px;
+  }
+
+  .detail {
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ln);
+  }
+  .detail-inner { max-width: 680px; }
+  .detail-text p { font-size: 15px; line-height: 1.8; color: #555; margin-bottom: 20px; }
+  .detail-text p:last-child { margin-bottom: 0; }
+
+  .included {
+    background: var(--c);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .included-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .included-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em; line-height: 1.05;
+    color: var(--ink); text-transform: uppercase; margin-top: 8px;
+  }
+  .included-list { list-style: none; display: flex; flex-direction: column; }
+  .included-list li {
+    font-size: 14px; line-height: 1.6; color: #444;
+    padding: 12px 0; border-bottom: 1px solid var(--ln);
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .included-list li:first-child { padding-top: 0; }
+  .li-marker {
+    width: 6px; height: 6px; background: var(--m);
+    border-radius: 1px; flex-shrink: 0; margin-top: 7px;
+  }
+
+  .process {
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .process-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em; text-transform: uppercase;
+    color: var(--ink); margin-bottom: 40px;
+  }
+  .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+  .pstep {
+    background: var(--c); padding: 28px 24px;
+    border: 1.5px solid var(--ln); position: relative;
+  }
+  .pstep::before {
+    content: ''; position: absolute;
+    top: -1.5px; left: -1.5px; right: -1.5px; height: 3px;
+    background: transparent; transition: background .2s;
+  }
+  .pstep:hover::before { background: var(--m); }
+  .pstep-n {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: 48px; letter-spacing: -0.05em;
+    color: var(--g); line-height: 1; margin-bottom: 12px; display: block;
+  }
+  .pstep-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: 18px;
+    letter-spacing: -0.01em; color: var(--ink); margin-bottom: 8px;
+  }
+  .pstep p { font-size: 12px; color: #777; line-height: 1.65; }
+
+  .faq {
+    background: var(--c);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .faq-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em; text-transform: uppercase;
+    color: var(--ink); margin-bottom: 36px;
+  }
+  .faq-list { display: flex; flex-direction: column; max-width: 720px; }
+  .faq-item { padding: 24px 0; border-bottom: 1.5px solid var(--ln); }
+  .faq-item:first-child { padding-top: 0; }
+  .faq-q {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: 18px;
+    letter-spacing: -0.01em; color: var(--ink);
+    margin-bottom: 10px; line-height: 1.2;
+  }
+  .faq-a { font-size: 14px; line-height: 1.75; color: #666; }
+
+  .cta-section {
+    background: var(--g);
+    padding: clamp(56px, 7vw, 96px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+    text-align: center;
+  }
+  .cta-inner { max-width: 520px; margin: 0 auto; }
+  .cta-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: clamp(28px, 4vw, 44px);
+    letter-spacing: -0.02em; text-transform: uppercase;
+    color: var(--c); margin-bottom: 16px; line-height: 1;
+  }
+  .cta-desc {
+    font-size: 15px; line-height: 1.7;
+    color: rgba(244,240,232,0.55); margin-bottom: 28px; font-weight: 300;
+  }
+  .cta-btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700; font-size: 12px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    text-decoration: none; color: var(--g); background: var(--m);
+    padding: 14px 32px; transition: opacity .2s;
+  }
+  .cta-btn:hover { opacity: .88; }
+  .cta-btn::after { content: '\2192'; font-size: 16px; }
+
+  .otros { border-bottom: 1.5px solid var(--ink); }
+  .otros-header { padding: 20px 40px; border-bottom: 1.5px solid var(--ink); }
+  .otros-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: 22px;
+    letter-spacing: -0.02em; text-transform: uppercase; color: var(--ink);
+  }
+  .otros-grid { display: grid; grid-template-columns: repeat(5, 1fr); }
+  .otro-card {
+    padding: 24px 20px; border-right: 1.5px solid var(--ln);
+    text-decoration: none; display: flex; flex-direction: column;
+    gap: 8px; transition: background .15s; position: relative;
+  }
+  .otro-card:last-child { border-right: none; }
+  .otro-card:hover { background: var(--c); }
+  .otro-tag {
+    font-family: 'DM Mono', monospace; font-size: 8px;
+    font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--m);
+  }
+  .otro-name {
+    font-family: 'Oswald', sans-serif; font-weight: 700;
+    font-size: 15px; letter-spacing: -0.01em;
+    color: var(--ink); line-height: 1.2;
+  }
+  .otro-arrow {
+    font-size: 16px; color: var(--m); margin-top: auto;
+    opacity: 0; transform: translateX(-6px);
+    transition: opacity .2s, transform .2s;
+  }
+  .otro-card:hover .otro-arrow { opacity: 1; transform: translateX(0); }
+
+  @media (max-width: 800px) {
+    .breadcrumb { padding: 12px 20px; }
+    .page-hero { padding: 40px 24px; }
+    .hero-title { font-size: 36px; }
+    .included-inner { grid-template-columns: 1fr; gap: 24px; }
+    .process-steps { grid-template-columns: 1fr 1fr; }
+    .otros-grid { grid-template-columns: 1fr 1fr; }
+    .otro-card:nth-child(even) { border-right: none; }
+    .otro-card { border-bottom: 1.5px solid var(--ln); }
+  }
+  @media (max-width: 480px) {
+    .process-steps { grid-template-columns: 1fr; }
+    .otros-grid { grid-template-columns: 1fr; }
+    .otro-card { border-right: none; }
+  }
+</style>

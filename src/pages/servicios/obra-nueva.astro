@@ -1,0 +1,362 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const servicios = [
+  { slug: 'reforma-vivienda', title: 'Reforma de Vivienda o Local', tag: 'Entrada principal' },
+  { slug: 'domotica', title: 'Domótica e Instalación Inteligente', tag: 'Tecnología' },
+  { slug: 'averias', title: 'Averías y Emergencias', tag: 'Urgente' },
+  { slug: 'industrial', title: 'Industrial Ligero', tag: 'Empresas' },
+  { slug: 'comunidades', title: 'Comunidades y Negocios Locales', tag: 'Comunidades' },
+];
+---
+
+<Layout title="Instalación en Obra Nueva — Leyva Instalaciones" description="Proyecto eléctrico completo para obra nueva en Granada. Boletines, legalizaciones y certificados incluidos desde el primer día.">
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Inicio</a>
+  <span class="sep">/</span>
+  <a href="/#servicios">Servicios</a>
+  <span class="sep">/</span>
+  <span class="current">Instalación en Obra Nueva</span>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <span class="hero-kicker">Construcción</span>
+  <h1 class="hero-title">Instalación en<br><span class="accent">Obra Nueva</span></h1>
+  <p class="hero-desc">Proyecto eléctrico completo para edificación nueva. Certificados y legalización incluidos desde el primer día. Todo planificado antes de poner el primer cable.</p>
+  <div class="hero-badges">
+    <span class="badge">Proyecto eléctrico</span>
+    <span class="badge">Boletín eléctrico</span>
+    <span class="badge">Legalización</span>
+  </div>
+</section>
+
+<!-- DESCRIPCIÓN -->
+<section class="detail">
+  <div class="detail-inner">
+    <span class="section-kicker">Sobre este servicio</span>
+    <div class="detail-text">
+      <p>En obra nueva no hay margen para la improvisación. La instalación eléctrica se planifica desde los planos, se ejecuta en fases coordinadas con la estructura y los cerramientos, y se legaliza antes de que nadie encienda una luz. Es un trabajo técnico que exige rigor desde el primer metro de tubo.</p>
+      <p>Llevamos más de dos décadas haciendo exactamente esto en Granada y su provincia. Viviendas unifamiliares, promociones de varias plantas, locales comerciales en construcción. Cada proyecto empieza con un estudio de cargas, un esquema unifilar y una planificación clara de fases. Sin sorpresas para ti ni para el constructor.</p>
+      <p>Nos encargamos de todo el ciclo: desde el diseño hasta la obtención del boletín eléctrico y la gestión con la distribuidora para dar de alta el suministro. Un solo interlocutor, un solo responsable. Así funciona mejor.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ INCLUYE -->
+<section class="included">
+  <div class="included-inner">
+    <div class="included-left">
+      <span class="section-kicker">Qué incluye</span>
+      <h2 class="included-title">Todo lo que cubre este servicio</h2>
+    </div>
+    <ul class="included-list">
+      <li><span class="li-marker"></span>Estudio de cargas y dimensionamiento de la instalación</li>
+      <li><span class="li-marker"></span>Esquema unifilar y planos eléctricos del proyecto</li>
+      <li><span class="li-marker"></span>Canalización y cableado en todas las fases de obra</li>
+      <li><span class="li-marker"></span>Cuadro general de mando y protección</li>
+      <li><span class="li-marker"></span>Circuitos diferenciados según REBT (iluminación, fuerza, cocina, aire acondicionado)</li>
+      <li><span class="li-marker"></span>Preinstalación de telecomunicaciones y datos</li>
+      <li><span class="li-marker"></span>Toma de tierra y protecciones contra sobretensiones</li>
+      <li><span class="li-marker"></span>Boletín eléctrico (Certificado de Instalación Eléctrica)</li>
+      <li><span class="li-marker"></span>Alta del suministro con la distribuidora</li>
+      <li><span class="li-marker"></span>Coordinación con dirección de obra y otros gremios</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="process">
+  <span class="section-kicker">Cómo trabajamos</span>
+  <h2 class="process-title">El proceso paso a paso</h2>
+  <div class="process-steps">
+    <div class="pstep">
+      <span class="pstep-n">01</span>
+      <h3 class="pstep-title">Estudio y proyecto</h3>
+      <p>Revisamos los planos arquitectónicos, hacemos el estudio de cargas y diseñamos la instalación eléctrica completa. Te presentamos un presupuesto cerrado antes de empezar.</p>
+    </div>
+    <div class="pstep">
+      <span class="pstep-n">02</span>
+      <h3 class="pstep-title">Fase de canalización</h3>
+      <p>Con la estructura levantada, instalamos todas las canalizaciones (tubos y cajas) antes de que se cierren tabiques. Es el momento clave para no tener que picar después.</p>
+    </div>
+    <div class="pstep">
+      <span class="pstep-n">03</span>
+      <h3 class="pstep-title">Cableado y cuadro</h3>
+      <p>Tendemos todo el cableado, montamos el cuadro eléctrico y conectamos cada circuito. Hacemos pruebas de aislamiento y continuidad antes de cerrar.</p>
+    </div>
+    <div class="pstep">
+      <span class="pstep-n">04</span>
+      <h3 class="pstep-title">Mecanismos y legalización</h3>
+      <p>Instalamos enchufes, interruptores y puntos de luz. Emitimos el boletín eléctrico y gestionamos el alta del suministro con la distribuidora.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <span class="section-kicker">Preguntas frecuentes</span>
+  <h2 class="faq-title">Lo que más nos preguntan</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3 class="faq-q">¿Puedo elegir dónde van los enchufes e interruptores?</h3>
+      <p class="faq-a">Por supuesto. Antes de empezar la fase de canalización repasamos contigo la distribución punto por punto. Es el momento de decidir dónde va cada toma, cada interruptor y cada punto de luz. Después de cerrar tabiques, los cambios son mucho más costosos.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-q">¿Qué es el boletín eléctrico y quién lo gestiona?</h3>
+      <p class="faq-a">El boletín eléctrico (o Certificado de Instalación Eléctrica) es el documento oficial que certifica que la instalación cumple la normativa. Lo emitimos nosotros como instaladores autorizados y nos encargamos de presentarlo ante la Junta de Andalucía. Sin él, no puedes dar de alta el suministro.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-q">¿Conviene dejar la instalación preparada para domótica?</h3>
+      <p class="faq-a">En obra nueva, sí. El coste adicional de dejar la preinstalación hecha (canalización extra y cableado de bus) es mínimo comparado con hacerlo después. Aunque no instales la domótica ahora, te recomendamos preparar la infraestructura para el futuro.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2 class="cta-title">¿Tienes un proyecto de obra nueva?</h2>
+    <p class="cta-desc">Hablemos antes de que empiece la obra. Cuanto antes planifiquemos la instalación, mejor resultado y menos imprevistos.</p>
+    <a href="/#contacto" class="cta-btn">Solicitar presupuesto</a>
+  </div>
+</section>
+
+<!-- OTROS SERVICIOS -->
+<section class="otros">
+  <div class="otros-header">
+    <h2 class="otros-title">Otros servicios</h2>
+  </div>
+  <div class="otros-grid">
+    {servicios.map(s => (
+      <a href={`/servicios/${s.slug}`} class="otro-card">
+        <span class="otro-tag">{s.tag}</span>
+        <span class="otro-name">{s.title}</span>
+        <span class="otro-arrow">&rarr;</span>
+      </a>
+    ))}
+  </div>
+</section>
+
+</Layout>
+
+<style>
+  .breadcrumb {
+    margin-top: 60px;
+    padding: 14px 40px;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    border-bottom: 1.5px solid var(--ln);
+    background: var(--w);
+  }
+  .breadcrumb a { color: var(--mid); text-decoration: none; transition: color .15s; }
+  .breadcrumb a:hover { color: var(--ink); }
+  .breadcrumb .sep { margin: 0 8px; color: var(--ln); }
+  .breadcrumb .current { color: var(--ink); }
+
+  .page-hero {
+    background: var(--gd);
+    padding: clamp(48px, 7vw, 96px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .hero-kicker {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--m);
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 24px;
+  }
+  .hero-kicker::before { content: ''; width: 20px; height: 1px; background: var(--m); }
+  .hero-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 5.5vw, 72px);
+    letter-spacing: -0.02em; line-height: 0.95;
+    color: var(--c); text-transform: uppercase;
+    margin-bottom: 24px; max-width: 700px;
+  }
+  .hero-title .accent { color: var(--m); }
+  .hero-desc {
+    font-size: 16px; line-height: 1.7;
+    color: rgba(244,240,232,0.6);
+    max-width: 520px; font-weight: 300; margin-bottom: 28px;
+  }
+  .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+  .badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--m);
+    border: 1px solid rgba(126,200,164,0.3);
+    padding: 5px 12px;
+  }
+
+  .detail {
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ln);
+  }
+  .detail-inner { max-width: 680px; }
+  .detail-text p { font-size: 15px; line-height: 1.8; color: #555; margin-bottom: 20px; }
+  .detail-text p:last-child { margin-bottom: 0; }
+
+  .included {
+    background: var(--c);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .included-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .included-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em; line-height: 1.05;
+    color: var(--ink); text-transform: uppercase; margin-top: 8px;
+  }
+  .included-list { list-style: none; display: flex; flex-direction: column; }
+  .included-list li {
+    font-size: 14px; line-height: 1.6; color: #444;
+    padding: 12px 0; border-bottom: 1px solid var(--ln);
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .included-list li:first-child { padding-top: 0; }
+  .li-marker {
+    width: 6px; height: 6px; background: var(--m);
+    border-radius: 1px; flex-shrink: 0; margin-top: 7px;
+  }
+
+  .process {
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .process-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em; text-transform: uppercase;
+    color: var(--ink); margin-bottom: 40px;
+  }
+  .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+  .pstep {
+    background: var(--c); padding: 28px 24px;
+    border: 1.5px solid var(--ln); position: relative;
+  }
+  .pstep::before {
+    content: ''; position: absolute;
+    top: -1.5px; left: -1.5px; right: -1.5px; height: 3px;
+    background: transparent; transition: background .2s;
+  }
+  .pstep:hover::before { background: var(--m); }
+  .pstep-n {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: 48px; letter-spacing: -0.05em;
+    color: var(--g); line-height: 1; margin-bottom: 12px; display: block;
+  }
+  .pstep-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: 18px;
+    letter-spacing: -0.01em; color: var(--ink); margin-bottom: 8px;
+  }
+  .pstep p { font-size: 12px; color: #777; line-height: 1.65; }
+
+  .faq {
+    background: var(--c);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .faq-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: clamp(24px, 3vw, 36px);
+    letter-spacing: -0.02em; text-transform: uppercase;
+    color: var(--ink); margin-bottom: 36px;
+  }
+  .faq-list { display: flex; flex-direction: column; max-width: 720px; }
+  .faq-item { padding: 24px 0; border-bottom: 1.5px solid var(--ln); }
+  .faq-item:first-child { padding-top: 0; }
+  .faq-q {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: 18px;
+    letter-spacing: -0.01em; color: var(--ink);
+    margin-bottom: 10px; line-height: 1.2;
+  }
+  .faq-a { font-size: 14px; line-height: 1.75; color: #666; }
+
+  .cta-section {
+    background: var(--g);
+    padding: clamp(56px, 7vw, 96px) clamp(32px, 6vw, 80px);
+    border-bottom: 1.5px solid var(--ink);
+    text-align: center;
+  }
+  .cta-inner { max-width: 520px; margin: 0 auto; }
+  .cta-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: clamp(28px, 4vw, 44px);
+    letter-spacing: -0.02em; text-transform: uppercase;
+    color: var(--c); margin-bottom: 16px; line-height: 1;
+  }
+  .cta-desc {
+    font-size: 15px; line-height: 1.7;
+    color: rgba(244,240,232,0.55); margin-bottom: 28px; font-weight: 300;
+  }
+  .cta-btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700; font-size: 12px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    text-decoration: none; color: var(--g); background: var(--m);
+    padding: 14px 32px; transition: opacity .2s;
+  }
+  .cta-btn:hover { opacity: .88; }
+  .cta-btn::after { content: '\2192'; font-size: 16px; }
+
+  .otros { border-bottom: 1.5px solid var(--ink); }
+  .otros-header { padding: 20px 40px; border-bottom: 1.5px solid var(--ink); }
+  .otros-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700; font-size: 22px;
+    letter-spacing: -0.02em; text-transform: uppercase; color: var(--ink);
+  }
+  .otros-grid { display: grid; grid-template-columns: repeat(5, 1fr); }
+  .otro-card {
+    padding: 24px 20px; border-right: 1.5px solid var(--ln);
+    text-decoration: none; display: flex; flex-direction: column;
+    gap: 8px; transition: background .15s; position: relative;
+  }
+  .otro-card:last-child { border-right: none; }
+  .otro-card:hover { background: var(--c); }
+  .otro-tag {
+    font-family: 'DM Mono', monospace; font-size: 8px;
+    font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--m);
+  }
+  .otro-name {
+    font-family: 'Oswald', sans-serif; font-weight: 700;
+    font-size: 15px; letter-spacing: -0.01em;
+    color: var(--ink); line-height: 1.2;
+  }
+  .otro-arrow {
+    font-size: 16px; color: var(--m); margin-top: auto;
+    opacity: 0; transform: translateX(-6px);
+    transition: opacity .2s, transform .2s;
+  }
+  .otro-card:hover .otro-arrow { opacity: 1; transform: translateX(0); }
+
+  @media (max-width: 800px) {
+    .breadcrumb { padding: 12px 20px; }
+    .page-hero { padding: 40px 24px; }
+    .hero-title { font-size: 36px; }
+    .included-inner { grid-template-columns: 1fr; gap: 24px; }
+    .process-steps { grid-template-columns: 1fr 1fr; }
+    .otros-grid { grid-template-columns: 1fr 1fr; }
+    .otro-card:nth-child(even) { border-right: none; }
+    .otro-card { border-bottom: 1.5px solid var(--ln); }
+  }
+  @media (max-width: 480px) {
+    .process-steps { grid-template-columns: 1fr; }
+    .otros-grid { grid-template-columns: 1fr; }
+    .otro-card { border-right: none; }
+  }
+</style>
