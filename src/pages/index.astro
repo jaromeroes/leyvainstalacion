@@ -105,36 +105,42 @@ import Layout from '../layouts/Layout.astro';
       <span class="svc-tag">Entrada principal</span>
       <div class="svc-title">Reforma de vivienda o local</div>
       <p>Renovación completa o parcial de la instalación existente. Actualización normativa, ampliaciones de potencia, coordinación con otros gremios incluida.</p>
+      <span class="svc-more">Más info &rarr;</span>
     </a>
     <a class="svc" href="/servicios/obra-nueva">
       <span class="svc-icon"><svg viewBox="0 0 40 40" fill="none" stroke="#1E3A2F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="14" width="28" height="22"/><path d="M14 36V26h12v10"/><path d="M6 14l14-10 14 10"/><polyline points="21,19 18,25 22,25 19,31"/></svg></span>
       <span class="svc-tag">Construcción</span>
       <div class="svc-title">Instalación en obra nueva</div>
       <p>Proyecto eléctrico completo en edificación nueva. Boletines y legalizaciones incluidos desde el primer día.</p>
+      <span class="svc-more">Más info &rarr;</span>
     </a>
     <a class="svc" href="/servicios/domotica">
       <span class="svc-icon"><svg viewBox="0 0 40 40" fill="none" stroke="#1E3A2F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="12" width="16" height="16" rx="2"/><line x1="16" y1="12" x2="16" y2="8"/><line x1="20" y1="12" x2="20" y2="8"/><line x1="24" y1="12" x2="24" y2="8"/><line x1="16" y1="28" x2="16" y2="32"/><line x1="20" y1="28" x2="20" y2="32"/><line x1="24" y1="28" x2="24" y2="32"/><line x1="12" y1="16" x2="8" y2="16"/><line x1="12" y1="20" x2="8" y2="20"/><line x1="12" y1="24" x2="8" y2="24"/><line x1="28" y1="16" x2="32" y2="16"/><line x1="28" y1="20" x2="32" y2="20"/><line x1="28" y1="24" x2="32" y2="24"/><circle cx="20" cy="20" r="3"/></svg></span>
       <span class="svc-tag">Tecnología</span>
       <div class="svc-title">Domótica e instalación inteligente</div>
       <p>Automatización del hogar: iluminación, climatización, seguridad, control remoto. Con especialista colaborador bajo nuestra supervisión.</p>
+      <span class="svc-more">Más info &rarr;</span>
     </a>
     <a class="svc" href="/servicios/averias">
       <span class="svc-icon"><svg viewBox="0 0 40 40" fill="none" stroke="#1E3A2F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L4 34h32L20 6z"/><polyline points="21,19 18,25 22,25 19,31"/></svg></span>
       <span class="svc-tag">Urgente</span>
       <div class="svc-title">Avería y emergencia</div>
       <p>Diagnóstico y resolución rápida. Disponibilidad real, no solo una promesa en la web.</p>
+      <span class="svc-more">Más info &rarr;</span>
     </a>
     <a class="svc" href="/servicios/industrial">
       <span class="svc-icon"><svg viewBox="0 0 40 40" fill="none" stroke="#1E3A2F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="32" height="22" rx="1"/><line x1="4" y1="17" x2="36" y2="17"/><circle cx="11" cy="13.5" r="1.5" fill="#1E3A2F"/><circle cx="17" cy="13.5" r="1.5" fill="#1E3A2F"/><rect x="9" y="21" width="6" height="7" rx="0.5"/><rect x="19" y="21" width="4" height="4" rx="0.5"/><rect x="25" y="21" width="4" height="4" rx="0.5"/><line x1="19" y1="28" x2="29" y2="28"/></svg></span>
       <span class="svc-tag">Empresas</span>
       <div class="svc-title">Industrial ligero</div>
       <p>Instalaciones en naves, talleres y espacios industriales de tamaño medio. Sin burocracia innecesaria.</p>
+      <span class="svc-more">Más info &rarr;</span>
     </a>
     <a class="svc" href="/servicios/comunidades">
       <span class="svc-icon"><svg viewBox="0 0 40 40" fill="none" stroke="#1E3A2F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="16" width="14" height="20"/><rect x="22" y="8" width="14" height="28"/><path d="M4 16l7-8 7 8"/><line x1="8" y1="22" x2="8" y2="26"/><line x1="14" y1="22" x2="14" y2="26"/><line x1="26" y1="14" x2="26" y2="18"/><line x1="32" y1="14" x2="32" y2="18"/><line x1="26" y1="22" x2="26" y2="26"/><line x1="32" y1="22" x2="32" y2="26"/><line x1="4" y1="36" x2="36" y2="36"/></svg></span>
       <span class="svc-tag">Comunidades</span>
       <div class="svc-title">Comunidades y negocios locales</div>
       <p>Actuaciones puntuales, revisiones periódicas y gestión de incidencias. Un número de teléfono que siempre responde.</p>
+      <span class="svc-more">Más info &rarr;</span>
     </a>
   </div>
 </section>
@@ -491,6 +497,14 @@ import Layout from '../layouts/Layout.astro';
   .svc.highlight .svc-title { color: var(--c); }
   .svc p { font-size: 13px; color: #666; line-height: 1.65; }
   .svc.highlight p { color: rgba(244,240,232,0.6); }
+  .svc-more {
+    display: inline-block; margin-top: 14px;
+    font-family: 'DM Mono', monospace; font-size: 10px;
+    font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--m); transition: letter-spacing .2s;
+  }
+  .svc:hover .svc-more { letter-spacing: 0.18em; }
+  .svc.highlight .svc-more { color: rgba(126,200,164,0.8); }
   .svc::after {
     content: '\2192';
     position: absolute; bottom: 20px; right: 24px;
