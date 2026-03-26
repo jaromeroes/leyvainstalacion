@@ -7,6 +7,7 @@ const articles = [
     topic: 'Reforma',
     title: 'Qué revisar en tu instalación eléctrica antes de empezar una reforma',
     excerpt: 'Antes de tirar paredes hay preguntas que vale la pena hacerle a tu instalación. Estas son las más importantes — y por qué importan.',
+    image: '/blog-revisar-instalacion.webp',
     date: '12 Feb 2025',
     reading: '4 min lectura',
     featured: true,
@@ -16,6 +17,7 @@ const articles = [
     topic: 'Domótica',
     title: '¿Merece la pena preparar tu casa nueva para domótica?',
     excerpt: 'El coste de pre-instalar domótica durante la obra es una fracción de hacerlo después. Pero no todo el mundo la necesita.',
+    image: '/blog-preparar-domotica.webp',
     date: '28 Ene 2025',
     reading: '3 min lectura',
   },
@@ -24,6 +26,7 @@ const articles = [
     topic: 'Seguridad',
     title: 'Cuándo tienes que cambiar el cuadro eléctrico y cuándo no',
     excerpt: 'Un cuadro antiguo no siempre significa un cuadro peligroso. Te explicamos cuándo hay que actuar y cuándo puedes esperar.',
+    image: '/blog-cambiar-cuadro.webp',
     date: '15 Ene 2025',
     reading: '5 min lectura',
   },
@@ -32,6 +35,7 @@ const articles = [
     topic: 'Normativa',
     title: 'El boletín eléctrico: qué es, para qué sirve y cuándo lo necesitas',
     excerpt: 'Si vas a vender, alquilar o ampliar potencia, necesitas este documento. Te contamos todo lo que debes saber.',
+    image: '/blog-boletin-electrico.webp',
     date: '02 Ene 2025',
     reading: '4 min lectura',
   },
@@ -53,6 +57,7 @@ const rest = articles.slice(1);
   <section class="featured-section">
     <a href={`/blog/${featured.slug}`} class="featured-card">
       <div class="featured-img">
+        <img src={featured.image} alt={featured.title} />
         <span class="featured-img-label">Artículo destacado</span>
       </div>
       <div class="featured-body">
@@ -71,6 +76,9 @@ const rest = articles.slice(1);
     <div class="articles-grid">
       {rest.map((article) => (
         <a href={`/blog/${article.slug}`} class="article-card">
+          <div class="article-card-img">
+            <img src={article.image} alt={article.title} />
+          </div>
           <div class="article-card-top">
             <span class="topic-tag">{article.topic}</span>
             <span class="article-meta">{article.date}</span>
@@ -154,12 +162,26 @@ const rest = articles.slice(1);
     position: relative;
     overflow: hidden;
   }
+  .featured-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
   .featured-img-label {
     font-family: 'DM Mono', monospace;
     font-size: 9px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #bbb;
+    color: var(--w);
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+    padding: 4px 10px;
+    border-radius: 3px;
   }
   .featured-body {
     padding: 36px 40px;
@@ -218,6 +240,17 @@ const rest = articles.slice(1);
   .articles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .article-card-img {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .article-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .article-card {
     padding: 32px 36px;
