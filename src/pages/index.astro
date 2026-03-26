@@ -238,21 +238,45 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
   <div class="contact-right">
-    <div class="form-row">
-      <label class="form-label">Nombre</label>
-      <input type="text" class="form-input" placeholder="Tu nombre">
+    <form id="contact-form" action="https://formspree.io/f/xlgodjzo" method="POST">
+      <div class="form-row">
+        <label class="form-label">Nombre</label>
+        <input type="text" name="nombre" class="form-input" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label">Teléfono o email</label>
+        <input type="text" name="contacto" class="form-input" placeholder="Cómo contactarte" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label">¿Qué necesitas?</label>
+        <textarea name="mensaje" class="form-input" placeholder="Reforma, avería, obra nueva… cuantos más detalles, mejor." required></textarea>
+      </div>
+      <button type="submit" class="form-submit">Enviar consulta</button>
+    </form>
+    <div id="form-success" class="form-success" style="display:none;">
+      <p class="form-success-msg">¡Gracias! Hemos recibido tu consulta. Te responderemos en menos de 24 horas.</p>
     </div>
-    <div class="form-row">
-      <label class="form-label">Teléfono o email</label>
-      <input type="text" class="form-input" placeholder="Cómo contactarte">
-    </div>
-    <div class="form-row">
-      <label class="form-label">¿Qué necesitas?</label>
-      <textarea class="form-input" placeholder="Reforma, avería, obra nueva… cuantos más detalles, mejor."></textarea>
-    </div>
-    <button type="submit" class="form-submit">Enviar consulta</button>
   </div>
 </section>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const success = document.getElementById('form-success');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.style.display = 'none';
+      success.style.display = 'flex';
+    } else {
+      alert('Hubo un error al enviar. Inténtalo de nuevo o llámanos directamente.');
+    }
+  });
+</script>
 
 </Layout>
 
@@ -711,6 +735,14 @@ import Layout from '../layouts/Layout.astro';
     width: 100%; margin-top: 4px; transition: background .2s;
   }
   .form-submit:hover { background: var(--gm); }
+  .form-success {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 200px; text-align: center;
+  }
+  .form-success-msg {
+    font-family: 'DM Sans', sans-serif; font-size: 18px;
+    color: var(--g); font-weight: 600; line-height: 1.6;
+  }
 
   /* RESPONSIVE */
   @media (max-width: 800px) {
