@@ -19,6 +19,8 @@ import Layout from '../../layouts/Layout.astro';
     <div class="article-meta">02 Ene 2025 · 4 min lectura</div>
   </header>
 
+  <img class="article-hero" src="/blog-boletin-electrico.webp" alt="Electricista sosteniendo un certificado eléctrico con un multímetro sobre la mesa">
+
   <article class="article-body">
     <p>El boletín eléctrico es uno de esos documentos que nadie busca hasta que lo necesita con urgencia. Suele aparecer en el momento de vender un piso, alquilar una vivienda, contratar más potencia o legalizar una reforma. Y cuando llega ese momento, las prisas son malas consejeras.</p>
 
@@ -180,6 +182,15 @@ import Layout from '../../layouts/Layout.astro';
   }
 
   /* HEADER */
+  .article-hero {
+    width: 100%;
+    max-width: 780px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    padding: 0 clamp(32px, 6vw, 80px);
+    box-sizing: border-box;
+  }
   .article-header {
     padding: clamp(40px, 6vw, 72px) clamp(32px, 6vw, 80px) clamp(32px, 4vw, 48px);
     max-width: 780px;

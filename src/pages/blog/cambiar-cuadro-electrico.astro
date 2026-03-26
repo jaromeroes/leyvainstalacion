@@ -19,6 +19,8 @@ import Layout from '../../layouts/Layout.astro';
     <div class="article-meta">15 Ene 2025 · 5 min lectura</div>
   </header>
 
+  <img class="article-hero" src="/blog-cambiar-cuadro.webp" alt="Cuadro eléctrico antiguo junto a uno moderno con interruptores automáticos">
+
   <article class="article-body">
     <p>El cuadro eléctrico es el elemento más importante de tu instalación. Es el punto donde se distribuye la electricidad a toda la vivienda y donde se concentran las protecciones que evitan incendios y electrocuciones. Sin embargo, no todos los cuadros antiguos necesitan ser sustituidos, ni todos los cuadros que parecen modernos están correctamente instalados.</p>
 
@@ -172,6 +174,15 @@ import Layout from '../../layouts/Layout.astro';
   }
 
   /* HEADER */
+  .article-hero {
+    width: 100%;
+    max-width: 780px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    padding: 0 clamp(32px, 6vw, 80px);
+    box-sizing: border-box;
+  }
   .article-header {
     padding: clamp(40px, 6vw, 72px) clamp(32px, 6vw, 80px) clamp(32px, 4vw, 48px);
     max-width: 780px;

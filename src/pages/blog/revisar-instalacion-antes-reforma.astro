@@ -19,6 +19,8 @@ import Layout from '../../layouts/Layout.astro';
     <div class="article-meta">12 Feb 2025 · 4 min lectura</div>
   </header>
 
+  <img class="article-hero" src="/blog-revisar-instalacion.webp" alt="Electricista inspeccionando un cuadro eléctrico durante una reforma de vivienda">
+
   <article class="article-body">
     <p>Cuando decides reformar una vivienda, lo primero en lo que piensas es en los azulejos, la distribución de las habitaciones o el color de las paredes. La instalación eléctrica rara vez aparece en la lista de prioridades. Y sin embargo, es una de las decisiones que más puede afectar al presupuesto final y, sobre todo, a la seguridad de tu hogar.</p>
 
@@ -170,6 +172,15 @@ import Layout from '../../layouts/Layout.astro';
   }
 
   /* HEADER */
+  .article-hero {
+    width: 100%;
+    max-width: 780px;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    padding: 0 clamp(32px, 6vw, 80px);
+    box-sizing: border-box;
+  }
   .article-header {
     padding: clamp(40px, 6vw, 72px) clamp(32px, 6vw, 80px) clamp(32px, 4vw, 48px);
     max-width: 780px;
