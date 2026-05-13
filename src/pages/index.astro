@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import heroAlfredo from '../assets/photos/hero-alfredo-cuadro-vivienda.webp';
 ---
 
 <Layout title="Leyva Instalaciones — Granada">
@@ -18,7 +20,14 @@ import Layout from '../layouts/Layout.astro';
   </div>
   <div class="hero-right">
     <div class="hero-photo">
-      <img src="/image.webp" alt="Instalación eléctrica en reforma de vivienda en Granada">
+      <Image
+        src={heroAlfredo}
+        alt="Alfredo de Leyva Instalaciones revisando un cuadro eléctrico en una vivienda en Granada"
+        widths={[640, 960, 1280, 1920, 2400]}
+        sizes="(max-width: 800px) 100vw, 50vw"
+        loading="eager"
+        fetchpriority="high"
+      />
     </div>
     <div class="hero-stats-strip">
       <div class="stat-block">
